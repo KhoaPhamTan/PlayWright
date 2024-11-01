@@ -1,0 +1,11 @@
+config:
+  target: https://petstore.octoperf.com/
+  engines:
+    playwright: { aggregateByName: true }
+  processor: './Artillery/Login_artillery.js'
+scenarios:
+  - name: Login
+    engine: playwright
+    testFunction: 'artilleryLoginScript'
+
+  
